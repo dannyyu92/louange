@@ -38,3 +38,6 @@ gem 'rolify'
 
 # Frontend
 gem 'bootstrap-sass'
+
+# HTML
+gem 'haml'

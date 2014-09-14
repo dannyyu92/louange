@@ -1,0 +1,29 @@
+<% flash.each do |name, msg| %>
+  <% if msg.is_a?(String) %>
+    <% 
+       if name == :notice 
+         class_name = "success"
+       elsif name == :error
+         class_name = "danger"
+       elsif name == :info
+         class_name = "info"
+       else
+         class_name = "warning"
+       end
+    %>
+    <div class="alert alert-<%= class_name %>">
+      <a class="close" data-dismiss="alert" onclick="$('.alert').hide()">&#215;</a>
+      <%= content_tag :div, msg, :id => "flash_#{name}" %>
+    </div>
+  <% end %>
+<% end %>
+
+<% if !@page_errors.nil? %>
+  <div id="error_explanation" class="control-group error">
+    <ul>
+      <% @page_errors.full_messages.each do |msg| %>
+        <li class="control-label" ><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
