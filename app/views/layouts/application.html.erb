@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>PricingProj</title>
+  <title><%= content_for?(:title) ? "Louange | " + yield(:title) : "Louange" %></title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class="container">
-    <%= render "layouts/messages" %>
-  </div>
+  <%= render "layouts/navigation" %>
+  <%= render "layouts/messages" %>
 
-  <div class="container">
+  <div class="container main">
     <div class="row">
       <%= yield %>
     </div>

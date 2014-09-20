@@ -1,5 +1,33 @@
 /*===Bootstrap Overrides===*/
 /* http://getbootstrap.com/customize/#less-variables */
 
+/*=== Navbar ===*/
+$navbar-default-color: #fff;
+$navbar-default-bg: #fff;
+$navbar-border-radius: 0px;
+$navbar-default-brand-color: #000;
+/*= Dimensions =*/
+$navbar-height: 65px;
+$navbar-margin-bottom: 0px;
+/*= Links =*/
+$navbar-default-link-color: #000;
+$navbar-default-link-hover-color: #000;
+
+
+/*=== Alerts ===*/
+$alert-padding: 18px;
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+/*=== Alerts ===*/
+.alert {
+  margin-bottom: 0px;
+}
+
+/*=== Container ===*/
+.container {
+  &.main {
+    margin-top:30px;
+  }
+}
