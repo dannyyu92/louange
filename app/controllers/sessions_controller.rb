@@ -15,7 +15,7 @@ class SessionsController < ApplicationController
       redirect_back_or_to(:root, notice: 'Login successful')
     else
       flash.now[:alert] = 'Login failed'
-      render action: 'new'
+      render :new, layout: "login"
     end
   end
 

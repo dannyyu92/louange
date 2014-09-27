@@ -2,10 +2,10 @@ development:
   adapter: postgresql
   encoding: unicode
   host: localhost
-  database: pricing_development
+  database: louange_development
   pool: 5
   timeout: 5000
-  username: pricing_admin
+  username: louange_admin
   password: password
 
 # Warning: The database defined as "test" will be erased and
@@ -15,18 +15,18 @@ test:
   adapter: postgresql
   encoding: unicode
   host: localhost
-  database: pricing_test
+  database: louange_test
   pool: 5
   timeout: 5000
-  username: pricing_admin
+  username: louange_admin
   password: password
 
 production:
   adapter: postgresql
   encoding: unicode
   host: localhost
-  database: pricing_production
+  database: louange_production
   pool: 5
   timeout: 5000
-  username: pricing_admin
+  username: louange_admin
   password: password
