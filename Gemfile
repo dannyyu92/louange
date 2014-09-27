@@ -43,3 +43,7 @@ gem 'rolify'
 
 # Frontend
 gem 'bootstrap-sass'
+
+# File Uploads
+gem 'fog'
+gem 'carrierwave'
