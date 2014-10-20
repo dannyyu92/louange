@@ -16,6 +16,63 @@
 
 @import "variables";
 
+a {
+  color: $louange-blue; 
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+html { 
+  background: url(./background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body {
+  background-color: transparent;
   font-family: $font-primary;
+}
+
+.intro {
+  text-align: center;
+  height: 350px;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-top: 238px;
+  .headlines {
+    color: #fff;
+    padding-top: 35px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    #headlineOne {
+      font-size: 3.2em;
+    }
+    #headlineTwo {
+      font-size: 1.2em;
+      letter-spacing: 1.4px;
+    }
+  }
+  .sign-up-form {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    .sign-up-text-box {
+      input {
+        background: rgba(255, 255, 255, 0.8);
+        margin-bottom: 15px;
+        font-size: 12px;
+        height: 32px;
+      }
+    }
+  }
+  #sign-up {
+    font-weight: normal;
+    font-size: 12px;
+    height: 32px;
+  }
+
+  #what-is-louange {
+    color: #ccc;
+    font-size: 11px;
+  }
 }

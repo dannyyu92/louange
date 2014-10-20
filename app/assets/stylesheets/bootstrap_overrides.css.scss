@@ -1,3 +1,5 @@
+@import "variables";
+
 /*===Bootstrap Overrides===*/
 /* http://getbootstrap.com/customize/#less-variables */
 
@@ -13,6 +15,13 @@ $navbar-margin-bottom: 0px;
 $navbar-default-link-color: #000;
 $navbar-default-link-hover-color: #000;
 
+/*=== Buttons ===*/
+$btn-primary-bg: $louange-blue;
+
+/*=== Forms ===*/
+/*== Inputs ==*/
+$input-border: transparent;
+$input-border-radius: 3px;
 
 /*=== Alerts ===*/
 $alert-padding: 18px;
@@ -29,5 +38,12 @@ $alert-padding: 18px;
 .container {
   &.main {
     margin-top:30px;
+  }
+}
+
+/*=== Buttons ===*/
+.btn {
+  .btn-primary {
+    border-top: 5px;
   }
 }
