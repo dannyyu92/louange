@@ -47,3 +47,4 @@ gem 'bootstrap-sass'
 # File Uploads
 gem 'fog'
 gem 'carrierwave'
+gem 'mini_magick'
